@@ -1,0 +1,194 @@
+/*! desafio-01 v0.0.1 | (c) 2020 Mércia Keila | / License | / */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+/* line 1, src/scss/2-base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, src/scss/2-base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, src/scss/2-base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, src/scss/2-base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, src/scss/2-base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, src/scss/2-base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, src/scss/2-base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, src/scss/2-base/_normalize.scss */
+html {
+  background-color: #674baf;
+  background-image: url(../../src/img/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100% right;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+/* line 11, src/scss/2-base/_normalize.scss */
+.container {
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 20, src/scss/2-base/_normalize.scss */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.8em;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/* line 24, src/scss/2-base/_normalize.scss */
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* line 28, src/scss/2-base/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, src/scss/2-base/_normalize.scss */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  /* line 43, src/scss/2-base/_normalize.scss */
+  html {
+    background-image: url(../../src/img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100% right;
+  }
+  /* line 50, src/scss/2-base/_normalize.scss */
+  h1 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  /* line 54, src/scss/2-base/_normalize.scss */
+  p {
+    font-size: 0.90em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+}
+
+/* line 1, src/scss/2-base/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 2, src/scss/3-objects/_networks.scss */
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 7, src/scss/3-objects/_networks.scss */
+.networks a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2em;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15px;
+  width: 40px;
+}
+
+/* line 19, src/scss/3-objects/_networks.scss */
+.networks a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  /* line 32, src/scss/3-objects/_networks.scss */
+  .networks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 1, src/scss/3-objects/_buttons.scss */
+.btn-primary {
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 50px;
+  color: #674baf;
+}

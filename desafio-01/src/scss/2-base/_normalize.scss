@@ -1,0 +1,58 @@
+html {
+    background-color: $violet;
+    background-image: url(../../src/img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100% right;
+    scroll-behavior: smooth;
+overflow-y: scroll;
+}
+
+.container {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+h1 {
+    @include h1 (2.5);
+}
+
+p {
+    @include p (1.2);
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+display:block;
+max-width:100%;
+}
+
+
+
+// Media Queries
+
+@media only screen and (max-width: 1024px) and (min-width: 320px)  
+{
+html {
+    background-image: url(../../src/img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100% right;
+}
+
+h1 {
+    @include h1(1.4);
+}
+
+p {
+    @include p(0.90);
+}
+
+}
