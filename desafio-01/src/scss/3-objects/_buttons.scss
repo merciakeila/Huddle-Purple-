@@ -8,4 +8,7 @@
     &:hover{
         @include shadow-brightness; 
     }
+    &.-large {
+        background-color: $violet;
+    }
 }
