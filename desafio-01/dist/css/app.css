@@ -180,11 +180,13 @@ img {
 /* line 3, src/scss/4-layout/_header.scss */
 .brand img {
   max-width: 200px;
+  width: auto;
+  height: auto;
   padding: 42px 0px 0px 30px;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
-  /* line 10, src/scss/4-layout/_header.scss */
+  /* line 12, src/scss/4-layout/_header.scss */
   .brand img {
     max-width: 50%;
     padding: 40px 20px 0px 20px;
