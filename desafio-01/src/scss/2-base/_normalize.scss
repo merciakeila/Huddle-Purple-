@@ -1,21 +1,13 @@
 html {
     background-color: $violet;
     background-image: url(../../src/img/bg-desktop.svg);
+    background-position: center 100% right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 100% right;
     scroll-behavior: smooth;
 overflow-y: scroll;
 }
 
-.container {
-    width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
 
 h1 {
     @include h1 (2.5);
@@ -42,9 +34,9 @@ max-width:100%;
 {
 html {
     background-image: url(../../src/img/bg-mobile.svg);
+    background-position: center 100% right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 100% right;
 }
 
 h1 {

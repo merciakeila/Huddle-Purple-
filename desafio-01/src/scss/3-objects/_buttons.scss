@@ -2,5 +2,10 @@
     background-color: $white;
     border-radius: 50px;
     padding: 10px 50px;
+    @include btn;
     color: $violet;
+    @include shadow-dark;
+    &:hover{
+        @include shadow-brightness; 
+    }
 }

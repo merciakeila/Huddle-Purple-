@@ -62,66 +62,59 @@ table {
 html {
   background-color: #674baf;
   background-image: url(../../src/img/bg-desktop.svg);
+  background-position: center 100% right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 100% right;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
 
-/* line 11, src/scss/2-base/_normalize.scss */
-.container {
-  width: 90%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+/* line 12, src/scss/2-base/_normalize.scss */
+h1 {
+  color: white;
+  font-size: 2.5em;
+  line-height: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* line 16, src/scss/2-base/_normalize.scss */
+p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /* line 20, src/scss/2-base/_normalize.scss */
-h1 {
-  font-size: 2.5em;
-  line-height: 1.8em;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-}
-
-/* line 24, src/scss/2-base/_normalize.scss */
-p {
-  font-size: 1.2em;
-  line-height: 1.8em;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-}
-
-/* line 28, src/scss/2-base/_normalize.scss */
 a {
   text-decoration: none;
 }
 
-/* line 32, src/scss/2-base/_normalize.scss */
+/* line 24, src/scss/2-base/_normalize.scss */
 img {
   display: block;
   max-width: 100%;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
-  /* line 43, src/scss/2-base/_normalize.scss */
+  /* line 35, src/scss/2-base/_normalize.scss */
   html {
     background-image: url(../../src/img/bg-mobile.svg);
+    background-position: center 100% right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 100% right;
   }
-  /* line 50, src/scss/2-base/_normalize.scss */
+  /* line 42, src/scss/2-base/_normalize.scss */
   h1 {
     font-size: 1.4em;
     line-height: 1.6em;
     text-align: center;
   }
-  /* line 54, src/scss/2-base/_normalize.scss */
+  /* line 46, src/scss/2-base/_normalize.scss */
   p {
     font-size: 0.90em;
     line-height: 1.5em;
@@ -135,20 +128,7 @@ img {
           box-sizing: border-box;
 }
 
-/* line 2, src/scss/3-objects/_networks.scss */
-.networks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* line 7, src/scss/3-objects/_networks.scss */
+/* line 4, src/scss/3-objects/_networks.scss */
 .networks a {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -156,19 +136,19 @@ img {
   border: 1px solid white;
   border-radius: 50%;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 1.2em;
   height: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 15px;
+  margin: 0 10px;
   width: 40px;
 }
 
-/* line 19, src/scss/3-objects/_networks.scss */
+/* line 16, src/scss/3-objects/_networks.scss */
 .networks a:hover {
   background-color: white;
   color: black;
@@ -176,19 +156,124 @@ img {
   transition: .5s;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 320px) {
-  /* line 32, src/scss/3-objects/_networks.scss */
-  .networks {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 /* line 1, src/scss/3-objects/_buttons.scss */
 .btn-primary {
   background-color: white;
   border-radius: 50px;
   padding: 10px 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.0em;
+  font-weight: 400;
   color: #674baf;
+  -webkit-box-shadow: 6px 2px 33px -4px #333233;
+  box-shadow: 6px 2px 33px -4px #333233;
+}
+
+/* line 8, src/scss/3-objects/_buttons.scss */
+.btn-primary:hover {
+  -webkit-box-shadow: -4px 0px 33px -4px white;
+  box-shadow: -4px 0px 33px -4px white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* line 3, src/scss/4-layout/_header.scss */
+.brand img {
+  max-width: 200px;
+  padding: 42px 0px 0px 30px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  /* line 10, src/scss/4-layout/_header.scss */
+  .brand img {
+    max-width: 50%;
+    padding: 40px 20px 0px 20px;
+  }
+}
+
+/* line 3, src/scss/4-layout/_hero.scss */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 9, src/scss/4-layout/_hero.scss */
+.hero-img img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 170px;
+          flex: 1 0 170px;
+  max-width: 90%;
+}
+
+/* line 14, src/scss/4-layout/_hero.scss */
+.hero-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 170px;
+          flex: 1 1 170px;
+  max-width: 600px;
+}
+
+/* line 19, src/scss/4-layout/_hero.scss */
+.btn-register {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  /* line 26, src/scss/4-layout/_hero.scss */
+  .hero-img img {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+  /* line 30, src/scss/4-layout/_hero.scss */
+  .btn-register {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* line 3, src/scss/4-layout/_footer.scss */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 7, src/scss/4-layout/_footer.scss */
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  /* line 17, src/scss/4-layout/_footer.scss */
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 0;
+  }
 }

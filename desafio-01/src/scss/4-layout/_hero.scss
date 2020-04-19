@@ -1,0 +1,34 @@
+// Hero
+
+.hero {
+    @include container-fluid;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img img{
+flex: 1 0 170px;
+max-width: 90%;
+}
+
+.hero-info {
+    flex: 1 1 170px;
+    max-width: 600px;
+}
+
+.btn-register {
+    margin: 10px 0;
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 320px)  
+{
+.hero-img img{ 
+max-width: 100%;
+padding: 10px 15px;
+}
+.btn-register {
+    margin-top: 30px;
+    text-align: center;
+}
+}

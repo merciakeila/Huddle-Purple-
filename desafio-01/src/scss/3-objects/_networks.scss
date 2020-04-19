@@ -1,39 +1,24 @@
 // Networks
 .networks {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+    
     a {
     align-items: center;
     border: 1px solid $white;
     border-radius: 50%;
     color: $white;    
-    display: flex;
+    display: inline-flex;
     font-size: 1.2em;
     height: 40px;
     justify-content: center;
-    margin: 0 15px;
+    margin: 0 10px;
     width: 40px;
    }
     a:hover {
-        background-color: $white;
-        color: $black;
-        transition: .5s;
+        @include hover-networks;
     }
 }
 
 
-
-// Media Queries
-
-@media only screen and (max-width: 1024px) and (min-width: 320px)  
-{
-.networks {
-    justify-content: center;
-}
-
-}
 
 
 
