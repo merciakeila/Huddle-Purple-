@@ -35,7 +35,7 @@ var paths = {
 		output: 'dist/img/'
 	},
 	copy: {
-		input: 'src/copy/**/*',
+		input: ['src/*.html', 'src/img/'],
 		output: 'dist/'
 	},
 	reload: '/.dist/'

@@ -177,11 +177,6 @@ img {
   transition: .5s;
 }
 
-/* line 11, src/scss/3-objects/_buttons.scss */
-.btn-primary.-large {
-  background-color: #674baf;
-}
-
 /* line 3, src/scss/4-layout/_header.scss */
 .brand img {
   max-width: 200px;
