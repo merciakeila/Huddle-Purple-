@@ -38,7 +38,7 @@ var paths = {
 		input: ['src/*.html', 'src/img/'],
 		output: 'dist/'
 	},
-	reload: '/.dist/'
+	reload: '/.src/'
 };
 
 
