@@ -31,9 +31,9 @@ Fim. <g-emoji class="g-emoji" alias="blush" fallback-src="https://github.githuba
   
 ### Design
 
-![Huddle-Web](/doc/desktop-design.jpg)
+![Huddle-Web](desafio-01/doc/desktop-design.jpg)
 <br><br>
-![Huddle-Mobile](/doc/mobile-design.jpg)
+![Huddle-Mobile](desafio-01/doc/mobile-design.jpg)
 
 <hr>
 
