@@ -10,7 +10,7 @@
 ````
 gulp
 ````
-3. Agora, vamos visulizar o código em tempo real o <b>BrowserSync</b> é responsável poressa <i>task</i>. Exacute o comando:
+3. Agora, vamos visulizar o código em tempo real o <b>BrowserSync</b> é responsável por essa <i>task</i>. Exacute o comando:
    
 ````
 gulp watch
