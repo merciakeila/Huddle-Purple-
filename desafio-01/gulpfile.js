@@ -35,10 +35,10 @@ var paths = {
 		output: 'dist/img/'
 	},
 	copy: {
-		input: ['src/*.html', 'src/img/'],
-		output: 'dist/'
+		input: 'src/img/*.{jpg,png}',
+		output: 'dist/img/'
 	},
-	reload: '/.src/'
+	reload: '/.dist/'
 };
 
 
