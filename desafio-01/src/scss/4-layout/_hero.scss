@@ -1,7 +1,7 @@
 // Hero
 
 .hero {
-    @include container-fluid;
+    @include container;
     align-items: center;
     justify-content: center;
 }

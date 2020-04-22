@@ -73,7 +73,7 @@ transition: .5s;
 
 // Grid
 
-@mixin  container-fluid {
+@mixin  container {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;

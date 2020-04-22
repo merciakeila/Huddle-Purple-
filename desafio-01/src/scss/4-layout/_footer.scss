@@ -1,7 +1,7 @@
 // Footer
 
 footer {
-    @include container-fluid;
+    @include container;
       align-items: center;
       justify-content: flex-end;
     ul {
