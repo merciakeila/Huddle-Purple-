@@ -16,13 +16,11 @@
 * JS
   * gulp boilerplate
   
-### Design
+### Resultado
 
-![Huddle-Web](desafio-01/doc/desktop-design.jpg)
-<br><br>
-![Huddle-Mobile](desafio-01/doc/mobile-design.jpg)
+![Resultado](doc/preview.gif)
 
-[Veja mais](desafio-01/README.md)<br>
+[Veja mais detalhes sobre o desafio](desafio-01/README.md)<br>
 
 
 
