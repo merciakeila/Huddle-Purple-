@@ -18,7 +18,7 @@
   
 ### Resultado
 
-![Resultado](doc/preview.gif)
+![Resultado](desafio-01/doc/preview.gif)
 
 [Veja mais detalhes sobre o desafio](desafio-01/README.md)<br>
 
